@@ -21,7 +21,7 @@ a {
 /* 
 /* Reduce the header height */
 .navbar.reduced-height {
-  height: 80px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
 }
 
 .navbar-brand img {
@@ -33,7 +33,7 @@ a {
 }
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: #ffc107;
   padding: 8px 12px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -51,6 +51,7 @@ a {
 
 .navbar-toggler {
   border: none;
+  color: red;
 }
 
 .navbar-toggler-icon {
@@ -62,6 +63,7 @@ a {
 @media (max-width: 991px) {
   .header-nav-link {
     padding: 10px 12px;
+    
   }
 
   .header-logo {
@@ -83,19 +85,6 @@ h1, h2 {
   font-weight: bold;
 }
 
-.bgimg1{
-  background: url('./images/what\ we\ do.jpg');
-  width: 100%;
-  height: 630px;
-  display: flex;
-  align-items: center;
-}
-
-.what-do-text{
-  font-size: xx-large;
-  margin-left: 70px;
-  color: white;
-}
 
 .footer {
   font-size: 14px;
@@ -114,62 +103,6 @@ h1, h2 {
   background: linear-gradient(135deg, #2575fc, #6a11cb);
 }
 
-/* Full Screen Container */
-.main-container {
-  height: 100vh;
-}
-
-/* Sidebar Styling */
-.sidebar {
-  background: rgba(44, 62, 80, 0.8); /* Blurred background effect */
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  backdrop-filter: blur(8px);
-}
-
-.vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-/* Tabs Styling */
-.tabs-bar {
-  margin: 20px 0;
-  justify-content: center;
-}
-
-/* Content Area */
-.tab-content {
-  height: 60vh; /* Adjust as needed */
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.content-box {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.content-box h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.content-box p {
-  font-size: 1rem;
-}
 
 
 .btn-primary {
@@ -181,28 +114,70 @@ h1, h2 {
 .btn-primary:hover {
   background-color: #0056b3;
 }
+/* Custom CSS for uniform styling */
 .contact-button{
   position: absolute;
-  bottom: 0px;
-  left : 60px;
-  width: 120px;
-  height: 100px;
+  bottom: 0;
+  left: 15%;
+  width: 110px;
+  height: 110px;
   background-color: #007bff;
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
   color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .contact-button1{
   position: absolute;
-  bottom: 0px;
-right: 50px;
-  width: 120px;
-  height: 100px;
+  bottom: 0;
+  right: 15%;
+  width: 110px;
+  height: 110px;
   background-color: #007bff;
   border: none;
-  border-radius: 100%;
+  border-radius: 50%;
   color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* Image styling */
+.img {
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Text section styling */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .img {
+    height: 200px;
+  }
+
+  .contact-button,
+  .contact-button1 {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+}
+
+
 
 /* Expert Solutions Section */
 .expert-solutions {
@@ -249,21 +224,178 @@ margin-bottom: 200px;
 .form-control{
   border-radius: 10px;
 }
-
-.homebg{
-  background: url('./images/Data-Driven\ Decision\ Making.png');
-  width: 1500px;
-  height: 500px;
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
+.bgimg1{
+  background: url('./images/Shaping\ innovative.png');
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
 }
 
-.Img-1{
- width: 100%;
- height: 450px;
-  /* background: url('./images/Data-Driven\ Decision\ Making.png'); */
+
+.bgimg2{
+  width: 100%;
+  height: 500px;
+  display: flex;
+
+  flex-direction: column; /* Stack elements vertically on small screens */
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/what\ we\ do.jpg'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  padding: 20px;
+  text-align: center; /* Center align text on smaller screens */
+}
+
+.what-do-text {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.LearnSolutions button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.LearnSolutions button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .container-fluid {
+    flex-direction: row; /* Arrange items in a row on larger screens */
+    justify-content: space-between;
+  }
+
+  .what-do-text {
+    font-size: 2.5rem;
+  }
+
+  .LearnSolutions button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+  }
+}
+
+
+
+
+/* Center the text in the middle of the image */
+.carousel-caption.custom-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+
+/* CustomTabs.css */
+.custom-indicators{
+  width: 60%;
+  height: 50px;
+  display: flex;
+  /* justify-content: space-around; */
+  border-bottom: 2px solid #ddd;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  z-index: 1;
+}
+
+ .custom-button {
+  width: 180px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-radius: 15px 15px 0 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 1;
+  color: #007bff;
+}
+
+.custom-button:active {
+  background-color: white;
+  color: red;
+  opacity: 0.7;
+}
+
+
+.custom-button:hover {
+  background-color: white; /* Darker shade of blue on hover */
+  opacity: 0.3;
+}
+
+/* Style for the mouse pointer */
+.custom-button {
+  cursor: pointer; /* Default mouse pointer */
+}
+
+/* Optional: for buttons inside carousel to be more visually clear */
+.custom-button:focus {
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .Vertical-text {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Vertical-text {
+    font-size: 0.8rem;
+  }
+}
+
+.Vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Align items in a vertical column */
+  justify-content: center; /* Adjusts the alignment */
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+  padding: 10px;
+  z-index: 1;
+}
+.Vertical-text h1 {
+  margin-bottom: 10px; /* Add some spacing between h1 and h6 */
+}
+.Vertical-text h6 {
+  font-size: 1rem; /* Smaller font size for h6 */
 }

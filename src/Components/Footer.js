@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../images/HMT Global1.png'
 
 
 const Footer = () => {
@@ -9,9 +10,10 @@ const Footer = () => {
           {/* Logo and Social Media Icons */}
           <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
             <img
-              src="https://via.placeholder.com/150x50" // Replace with your logo URL
+              src={Logo} // Replace with your logo URL
               alt="Himotech Logo"
               className="mb-3"
+              style={{width:'200px',height:'120px'}}
             />
             <div className="social-icons">
               <a href="/" className="me-3 text-dark">

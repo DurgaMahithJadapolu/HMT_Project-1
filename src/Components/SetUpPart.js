@@ -1,56 +1,45 @@
 import React from "react";
-import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import Img from '../images/What sets us apart.jpg'
+import  Img1 from '../images/share your ideas.png'// For additional styling if needed
 
-const WhatSetsUsApart = () => {
+const AboutScreen = () => {
   return (
-    <Container className="my-5">
-      <Row className="justify-content-center text-center">
-        <Col md={10}>
-          <h1 className="text-primary">
-            🌐 What Sets Us Apart
-          </h1>
-        </Col>
-      </Row>
-      <Row className="align-items-center mt-4">
-        <Col md={6}>
-          <p className="text-muted">
-            Himotech Global has established itself as a trusted name in the IT
+    <div className="container py-5">
+      <div className="row align-items-center">
+        {/* Left Section: Text Content */}
+        <div className="col-md-6">
+          <h4 className="text-primary mb-3"> 🌐What Sets Us Apart</h4>
+          <h2 className="mb-4">Our Edge is Smart, Setting Us Apart</h2>
+          <p>
+            Hinotech Global has established itself as a trusted name in the IT
             industry, recognized for delivering reliable services and managing
-            projects with precision. Since 2021, we have been dedicated to
+            projects with precision. Since 2007, we have been dedicated to
             helping businesses create a strong digital identity in an
-            increasingly competitive technological landscape. Our mission is to
-            leverage the latest advancements in computer science, making IT
-            solutions accessible, efficient, and user-friendly for all. With a
-            committed team of experts, we continuously strive to build trust
-            with our clients, ensuring consistent quality and dependable
-            outcomes.
+            increasingly competitive technological landscape.
           </p>
-        </Col>
-        <Col md={6}>
-          <Card className="border-0">
-            <Card.Img
-              variant="top"
-              src={Img}
-              alt="Team image"
-              className="rounded"
-            />
-          </Card>
-        </Col>
-      </Row>
-      <Row className="text-center mt-5">
-        <Col md={6}>
-          <h4 className="text-primary">
-            Our Journey, Your Success
-          </h4>
-        </Col>
-        <Col md={6}>
-          <p>We’re here to help you shine online!</p>
-          <Button variant="primary">Let’s Talk</Button>
-        </Col>
-      </Row>
-    </Container>
+          <p>
+            Our mission is to leverage the latest advancements in computer
+            science, making IT solutions accessible, efficient, and user-friendly
+            for all. With a committed team of experts, we continuously strive to
+            build trust with our clients, ensuring consistent quality and
+            dependable outcomes.
+          </p>
+          <div className="d-flex align-items-center gap-3">
+            <button className="btn btn-primary">Our Journey, Your Success</button>
+            <button className="btn btn-outline-primary">Let's Talk</button>
+          </div>
+        </div>
+
+        {/* Right Section: Image */}
+        <div className="col-md-6 text-center">
+          <img
+            src={Img1}// Replace with your image URL
+            alt="About Us"
+            className="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default WhatSetsUsApart;
+export default AboutScreen;

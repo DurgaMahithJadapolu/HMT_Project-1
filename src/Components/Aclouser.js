@@ -1,13 +1,13 @@
 import React from 'react';
-import CountUp from 'react-countup';
-import Img from '../images/Closer look at us.png';
+import CountUp from 'react-countup'; // Import CountUp
+import Img1 from '../images/Closer look at us.png';
 
-const AboutPage = () => {
+const AboutUs = () => {
   return (
-    <div className="about-page container-fluid">
-      <div className="row" style={{ height: '100vh' }}> {/* Ensure the row fills the viewport height */}
-        {/* Left Section */}
-        <div className="col-md-4 bg-light p-5 d-flex flex-column justify-content-between">
+    <div className="about-us container-fluid d-flex align-items-center">
+      <div className="row w-100">
+        {/* Left Side */}
+        <div className="col-md-4  p-5 d-flex flex-column justify-content-between">
           <div className="mb-4">
             <h5>A Legacy Since</h5>
             <h2>
@@ -34,33 +34,22 @@ const AboutPage = () => {
           </div>
         </div>
 
-       
-        <div className="col-md-4 bg-light p-5 d-flex flex-column justify-content-between">
-          <div className="p-3 bg-light text-dark rounded shadow-sm">
-            <img
-              src={Img}
-              alt="Company Logo"
-              className="mb-3"
-              style={{ maxWidth: '100%', height: '200px' }}
-            />
+        {/* Right Side */}
+        <div className="col-lg-6 col-md-12 text-center py-5 px-4 d-flex flex-column justify-content-center">
+          <div className="highlight-box mb-4">
+            <span className="badge  text-dark">Where experience fuels DIGITAL SUCCESS</span>
+          </div>
+          <h1 className="text-primary fw-bold mb-5">A Closer Look at US!</h1>
+          <div className="text-box  p-4 rounded">
+            <img src={Img1} alt="HMT Logo" className="mb-3" />
             <p>
-              At Himotech Global, we are at the forefront of the Web3
-              revolution, delivering cutting-edge blockchain solutions and
-              crypto projects that shape the digital landscape. With over
-              3–4 years of experience, our team excels in creating innovative,
-              secure, and scalable decentralized applications and networks.
+              At himnotech global, we are at the forefront of the Web3 revolution, delivering cutting-edge blockchain solutions and crypto projects that shape the digital landscape. With over 3-4 years of experience, our team excels in creating innovative, secure, and scalable decentralized applications and networks.
             </p>
           </div>
-        </div>
-
-
-         <div className="col-md-4 bg-dark p-5 d-flex flex-column align-items-center justify-content-center text-dark " style={{ width:'300px',height:'200px'}}>
-          <h1 className="text-uppercase">A Closer Look at Us!</h1>
-          <h4 className="mt-4">Where experience fuels DIGITAL SUCCESS</h4>
         </div>
       </div>
     </div>
   );
 };
 
-export default AboutPage;
+export default AboutUs;

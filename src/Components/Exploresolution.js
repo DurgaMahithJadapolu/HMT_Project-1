@@ -19,7 +19,7 @@ const ExpertSolutions = () => {
               className="web-development-title py-5 mt-5"
               style={{ color: "#65C6B9" }}
             >
-              Web Development
+              WEB DEVELOPMENT
             </h2>
             <p style={{ width: "480px" }}>
               We create responsive, user-friendly websites that blend seamless
@@ -50,60 +50,65 @@ const ExpertSolutions = () => {
           </div>
         </div>
       </div>
-      <div className="container d-flex mt-5">
+      <div className="container-fuild mt-5">
         <div className="row">
-          <div className="col-12 col-md-6 text-center">
+
+        <div className="col-12 col-md-6 text-center">
+          
             <div className="position-relative">
               <img
                 src={Img2}
-                alt="Software Testing"
+                alt="Web Development"
                 className="img"
                 style={{
                   height: "auto",
                   maxWidth: "80%",
                   objectFit: "cover",
-
                 }}
               />
               <button className="contact-button1">Contact</button>
             </div>
           </div>
-
+          {/* Left Section - Text Content */}
           <div className="col-12 col-md-6 mb-4 mb-md-0">
+        
             <h2
-              className=" SOFTWARE TESTING-title  mt-4  py-3"
+              className="py-5  mt-5 me-5"
               style={{ color: "#65C6B9" }}
             >
               SOFTWARE TESTING
             </h2>
-            <p style={{ width: "480px" }}>
-              Ensure your software runs smoothly with our comprehensive testing
-              services. We perform functional, performance, and security testing
-              ta deliver ratust, bug- free applications that perform flawlessly:
+            <p className="ms-5" style={{ width: "480px" }}>
+            Ensure your software runs smoothly with our comprehensive testing services.
+We perform functional, performance, and security testing ta deliver ratust, bug-
+free applications that perform flawlessly:
             </p>
           </div>
+
+         
+          
         </div>
       </div>
 
-      <div className="container d-flex mt-5">
+      <div className="container mt-5">
         <div className="row">
           {/* Left Section - Text Content */}
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
+          <div className="col-12 col-md-6 mb-4 mb-md-0 ">
+            
             <h2
-              className="web-development-title mt-4  py-3"
+              className="web-development-title py-5 mt-5"
               style={{ color: "#65C6B9" }}
             >
-              WEB3 DEVELOPEMENT
+              WEB3 DEVELOPMENT
             </h2>
             <p style={{ width: "480px" }}>
-              Dive into the future of the internet with our Web development
-              services. We buitd decentralized applications (dApps), smart
-              contracts, and token systems that empower your business with
-              blockchain-based salutions.
+            Dive into the future of the internet with our Web development services. We buitd decentralized applications (dApps), smart contracts, and token systems that empower your business with blockchain-based salutions.
             </p>
           </div>
 
+          {/* Right Section - Image with Contact */}
           <div className="col-12 col-md-6 text-center">
+           
             <div className="position-relative">
               <img
                 src={Img3}
@@ -120,9 +125,11 @@ const ExpertSolutions = () => {
           </div>
         </div>
       </div>
-      <div className="container d-flex mt-5">
+      <div className="container-fuild mt-5">
         <div className="row">
-          <div className="col-12 col-md-6 text-center">
+
+        <div className="col-12 col-md-6 text-center">
+          
             <div className="position-relative">
               <img
                 src={Img4}
@@ -137,36 +144,45 @@ const ExpertSolutions = () => {
               <button className="contact-button1">Contact</button>
             </div>
           </div>
+          {/* Left Section - Text Content */}
           <div className="col-12 col-md-6 mb-4 mb-md-0">
+        
             <h2
-              className="web-development-title mt-4  py-3"
+              className="py-5  mt-5 me-5"
               style={{ color: "#65C6B9" }}
             >
-              BLOCKCHAIN DEVELOPEMENT
+              BLOCKCHAIN DEVELOPMENT
             </h2>
-            <p style={{ width: "480px" }}>
-              Our blockchain development service provides secure, transparent,
-              and scalable solutions. From private blockchains to public
-              platforms, we help businesses streamline processes with
-              cutting-edge technology.
+            <p className="ms-5" style={{ width: "480px" }}>
+            Our blockchain development service provides secure, transparent, and scalable solutions. From private blockchains to public platforms, we help businesses
+streamline processes with cutting-edge technology.
             </p>
           </div>
+
+         
+          
         </div>
       </div>
-      <div className="container d-flex mt-5">
+     
+      <div className="container mt-5">
         <div className="row">
-          <div className="col-12 col-md-6 mb-4 mb-md-0">
-            <h2 className="title mt-4  py-3" style={{ color: "#65C6B9" }}>
+          {/* Left Section - Text Content */}
+          <div className="col-12 col-md-6 mb-4 mb-md-0 ">
+            
+            <h2
+              className="web-development-title py-5 mt-5"
+              style={{ color: "#65C6B9" }}
+            >
               MARKETING SERVICES
             </h2>
             <p style={{ width: "480px" }}>
-              Boost your brand's visibility with our expert marketing
-              strategies. From digital campaigns to SEQ, we help you connect
-              with your audience and grow your business through tailored
-              marketing efforts.
+            Boost your brand's visibility with our expert marketing strategies. From digital campaigns to SEQ, we help you connect with your audience and grow your business through tailored marketing efforts.
             </p>
           </div>
+
+          {/* Right Section - Image with Contact */}
           <div className="col-12 col-md-6 text-center">
+           
             <div className="position-relative">
               <img
                 src={Img5}
