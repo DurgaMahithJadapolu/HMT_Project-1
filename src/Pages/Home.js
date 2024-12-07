@@ -1,9 +1,10 @@
 import React from "react";
 import Img2 from "../images/Shaping innovative.png";
-import Img3 from "../images/what we do (1).png";
 
+ import SetUpPart from "../Components/SetUpPart.js";
+ import BluePrintOfSucess from "../Components/BluePrintOfSucess.js";
+ import Exploresolution from "../Components/Exploresolution.js";
 
-import Counter from "../Components/Aclouser";
 
 const HeroSection = () => {
   return (
@@ -33,12 +34,25 @@ const HeroSection = () => {
       <div className="container-fuild">
         <img src={Img2} className="bgimg" alt="Heroimage" />
       </div>
-      <div className="container-fuild">
-        <img src={Img3} className="bgimg" alt="Heroimage" />
+      <div className="container-fuild bgimg1">
+        <div>
+          <h3 className="what-do-text">what we do</h3>
+        </div>
+        <div>
+          <button>Learn more about Our Solutions</button>
+        </div>
       </div>
+
+       <div>
+        <SetUpPart />
+      </div> 
+
       <div>
-        <Counter />
-      </div>
+        <BluePrintOfSucess />
+        
+        <Exploresolution/>
+      </div> 
+
     </header>
   );
 };

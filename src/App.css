@@ -83,10 +83,19 @@ h1, h2 {
   font-weight: bold;
 }
 
+.bgimg1{
+  background: url('./images/what\ we\ do.jpg');
+  width: 100%;
+  height: 630px;
+  display: flex;
+  align-items: center;
+}
 
-
-
-
+.what-do-text{
+  font-size: xx-large;
+  margin-left: 70px;
+  color: white;
+}
 
 .footer {
   font-size: 14px;
@@ -105,3 +114,156 @@ h1, h2 {
   background: linear-gradient(135deg, #2575fc, #6a11cb);
 }
 
+/* Full Screen Container */
+.main-container {
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: rgba(44, 62, 80, 0.8); /* Blurred background effect */
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  backdrop-filter: blur(8px);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Tabs Styling */
+.tabs-bar {
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Content Area */
+.tab-content {
+  height: 60vh; /* Adjust as needed */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.content-box {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content-box h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 1rem;
+}
+
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+.contact-button{
+  position: absolute;
+  bottom: 0px;
+  left : 60px;
+  width: 120px;
+  height: 100px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 100%;
+  color: white;
+}
+.contact-button1{
+  position: absolute;
+  bottom: 0px;
+right: 50px;
+  width: 120px;
+  height: 100px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 100%;
+  color: white;
+}
+
+/* Expert Solutions Section */
+.expert-solutions {
+  background: url('./images/what\ we\ do\ \(1\).png');
+  color: white;
+  z-index: '-1';
+
+}
+.web-development-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Contact Button Styling */
+.contact-button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  transform: scale(1.1);
+}
+
+.BgHmt{
+  max-height: 400px;
+position: relative;
+bottom: 50px;
+right: 10px;
+z-index:0;
+
+}
+.IdeaImg{
+  max-height: 300px;
+   margin-left: 70px;
+
+position: absolute;
+bottom: 150px;
+right: 100px;
+z-index: 1;
+}
+.Htm-text{
+margin-bottom: 200px;
+}
+.form-control{
+  border-radius: 10px;
+}
+
+.homebg{
+  background: url('./images/Data-Driven\ Decision\ Making.png');
+  width: 1500px;
+  height: 500px;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+
+.Img-1{
+ width: 100%;
+ height: 450px;
+  /* background: url('./images/Data-Driven\ Decision\ Making.png'); */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
