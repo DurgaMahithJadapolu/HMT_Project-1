@@ -43,7 +43,8 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark reduced-height">
+    <div className='container-fulid  Navbar-style' >
+       <nav className="navbar navbar-expand-lg navbar-dark bg-dark reduced-height">
       <div className="container">
         <img src={Logo} alt="Logo" className="navbar-brand" style={{ width: '150px', height: '80px' }} />
         <button
@@ -141,6 +142,8 @@ const Header = () => {
         </div>
       </div>
     </nav>
+    </div>
+    
   );
 };
 

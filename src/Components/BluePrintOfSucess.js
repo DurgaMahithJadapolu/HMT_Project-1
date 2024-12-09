@@ -10,7 +10,7 @@ import img5 from "../images/Scalable Execution and Delivery.png";
 
 const CustomCarousel = () => {
   return (
-    <div className="container-fuild">
+    <div className="container-fulid">
       <div
         id="carouselExampleDark"
         className="carousel carousel-dark slide"

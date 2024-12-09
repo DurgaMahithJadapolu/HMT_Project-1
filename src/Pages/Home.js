@@ -3,23 +3,22 @@ import React from "react";
 import SetUpPart from "../Components/SetUpPart.js";
 import BluePrintOfSucess from "../Components/BluePrintOfSucess.js";
 import Exploresolution from "../Components/Exploresolution.js";
-import Counter from "../Components/Aclouser.js";
+import Counter from "../Components/CountUp.js";
+import Form from "../Components/Form.js";
 
 const HeroSection = () => {
   return (
     <header className="hero-section  text-center">
       <div className="container-fulid text-light ">
         <div className="bgimg  d-flex flex-column align-items-center justify-content-center">
-          <p className="lead">Smile :) You're in the right place!</p>
-          <h1 className="display-4 fw-bold">
-            The Future of Web3 and Blockchain
-          </h1>
-          <p className="mt-3">
-            We don’t just build blockchain projects; we help you shape the
-            future. Whether you’re developing your first decentralized
-            application or launching a new cryptocurrency, our consulting team
-            brings deep industry knowledge to guide you every step of the way.
-          </p>
+        <h1 className="display-4 fw-bold" style={{ fontSize: '4rem' }}>
+  The Future of Web3 
+</h1>
+
+<h1 className="display-4 fw-bold" style={{ fontSize: '4rem' }}>
+and Blockchain
+</h1>
+         
           <div className="mt-4">
             <a href="/" className="btn btn-primary btn-lg me-3">
               Explore
@@ -65,6 +64,9 @@ const HeroSection = () => {
       </div>
       <div>
         <Exploresolution />
+      </div>
+      <div>
+      <Form/>
       </div>
     </header>
   );
